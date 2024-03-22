@@ -39,7 +39,7 @@ jobs:
         working-directory: ./app
 
 
-# Optional: Though using the fusionauth-github-action is the preffered method to start FusionAuth in the workflow, if you want to start FusionAuth with docker-compose instead of the fusionauth-github-action you can use the configuration below (for example if you need customizations such as to use a custom password hashing plugin).
+# Optional: Using the fusionauth-github-action is the preferred method to start FusionAuth in the workflow, but if you want to start FusionAuth with docker-compose instead, you can use the configuration below (for example, if you need to use a custom password hashing plugin).
 # name: Test FusionAuth login
 # on:
 #   push:
