@@ -9,7 +9,7 @@ It's part of the article available at: https://fusionauth.io/docs/get-started/ru
 To run this application you will need Node.js and Docker installed. In a terminal run the code below.
 
 ```bash
-git clone https://github.com/FusionAuth/fusionauth_github_actions.git
+git clone https://github.com/FusionAuth/fusionauth-example-github-actions.git
 docker compose up
 ```
 
@@ -35,4 +35,8 @@ npx playwright test --project=chromium;
 
 ## Run the tests in a GitHub action
 
-To run these tests in a GitHub action, fork this repository, change the branch in `.github/workflows/test.yaml` from `main_RENAME_THIS_TO_ENABLE_TEST` to `main`. Commit and push. The action will start running in the Actions tab in the repository site.
+> By default, GitHub prevents action workflows from running on forked repositories. To grant permission for the workflow to execute, navigate to the Actions tab on your forked repository in GitHub and click on the **I understand my workflows, go ahead and enable them** button on the repository.
+
+To run these tests in a GitHub action, fork this repository, change the branch name in `.github/workflows/test.yaml` from `main_RENAME_THIS_TO_ENABLE_TEST` to `main`. Commit and push. The action will start running in the Actions tab in the repository site.
+
+
